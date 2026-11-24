@@ -6,6 +6,14 @@
 
 One image that sums up the world's news of **Monday 23 November 2026** — an entry for the [make.fun bounty "Sum up 23 November's world news in one image"](https://make.fun/bounty/news-image-20261123).
 
+## v2 — a photo-led front page
+
+Version 2 rebuilds the same verified news as a photo-led broadsheet:
+
+- **Full-width hero art** — the Strait of Hormuz at night, drawn larger and in more detail: two tankers burning under a starry sky, smoke, embers and fire on the water.
+- **Black date band** — "MONDAY, 23 NOVEMBER 2026" in white on black, so the day itself is unmissable (the judges' first criterion).
+- **Cleaner grid** — colour kicker bars, tighter headlines, shorter decks, and a fully flow-based layout so no rule ever crosses text.
+
 ## The day in one page
 
 **THE WORLD TODAY** — a premium newspaper front page for 23 November 2026:
@@ -22,7 +30,7 @@ One image that sums up the world's news of **Monday 23 November 2026** — an en
 ## How it works
 
 - `build_poster.py` draws `entry.png` (1024×1024, deterministic — run it twice and the bytes are identical) with Python + Pillow, no network.
-- `main.py` copies `entry.png` to `/output/entry.png` byte-for-byte.
+- `main.py` copies `entry.png` to `/output/entry.png` byte-for-byte, verified with SHA-256.
 
 ## Links
 
